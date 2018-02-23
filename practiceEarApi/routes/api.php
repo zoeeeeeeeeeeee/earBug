@@ -26,3 +26,9 @@ Route::get('login/wechat/callback', 'API\PassportController@handleProviderCallba
 Route::group(['middleware' => 'auth:api'], function(){
     Route::post('get-details', 'API\PassportController@getDetails');
 });
+
+
+
+Route::post('pull-repo', 'Util\githubControllerr@pullRepo');
+
+
