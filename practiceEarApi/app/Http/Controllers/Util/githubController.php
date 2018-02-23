@@ -33,10 +33,11 @@ class githubController extends Controller{
 //            // Kill the script or do something else here.
 //            die('Bad secret');
 //        }
-
-        system("cd /earBug/codeRepo/earBug >> /tmp/pull.log");
         system("echo here >> /tmp/pull.log");
 
+        system("echo here >> /tmp/pull.log");
+
+        system("cd /earBug/codeRepo/earBug >> /tmp/pull.log");
         system("/usr/bin/git pull origin master >> /tmp/pull.log");
     }
 }
