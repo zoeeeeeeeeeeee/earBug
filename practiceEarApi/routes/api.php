@@ -29,6 +29,6 @@ Route::group(['middleware' => 'auth:api'], function(){
 
 
 
-Route::post('pull-repo', 'Util\githubControllerr@pullRepo');
+Route::post('pull-repo', 'Util\githubController@pullRepo');
 
 
